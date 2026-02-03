@@ -137,8 +137,7 @@ const CONTACT_FIELDS: ContactField[] = [
     href: "mailto:harishdass2002@gmail.com",
   },
   { label: "Phone", value: "+91-6374994855", icon: "📞" },
-  { label: "LinkedIn", value: "linkedin.com/in/harish", icon: "💼", href: "#" },
-  { label: "GitHub", value: "github.com/harish", icon: "⬡", href: "#" },
+  { label: "LinkedIn", value: "linkedin.com/in/harish", icon: "💼", href: "https://www.linkedin.com/in/harish-dass-aa6979228/" },
 ];
 
 // ─── Hooks ────────────────────────────────────────────────────────────────────
@@ -1015,12 +1014,13 @@ export default function Portfolio() {
                 <a
                   key={field.label}
                   href={field.href || "#"}
-                  className="w-full max-w-sm flex items-center gap-4 px-5 py-4 rounded-[14px] no-underline"
+                  className="w-full flex items-center gap-4 px-5 py-4 rounded-[14px] no-underline"
                   style={{
                     background: "#162236",
                     border: "1px solid #1e2d4d",
                     transition: "all 0.35s cubic-bezier(.4,0,.2,1)",
                   }}
+                  target="_blank"
                   onMouseEnter={(e) => {
                     const el = e.currentTarget;
                     el.style.borderColor = "#4f6ff5";
